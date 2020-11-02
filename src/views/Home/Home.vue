@@ -13,7 +13,7 @@
           <br class="hidden sm:inline" />
           that will grow your sales.
         </h1>
-        <p class="mt-2 text-lg leading-7 text-gray-500 sm:mt-3 sm:text-xl sm:max-w-xl xl:mt-4 xl:text-2xl xl:max-w-2xl">
+        <p class="mt-2 text-lg leading-7 text-gray-500 sm:mt-3 sm:text-lg sm:max-w-xl xl:mt-4 xl:text-2xl xl:max-w-2xl">
           Give your customers a better checkout experience and
           <br class="hidden sm:inline" />
           sell more by displaying smart purchase suggestions.
