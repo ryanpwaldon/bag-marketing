@@ -11,6 +11,10 @@ module.exports = {
       },
       colors: {
         gray: colors.trueGray
+      },
+      borderRadius: {
+        '3xl': '2.75rem',
+        '4xl': '3.25rem'
       }
     }
   }
