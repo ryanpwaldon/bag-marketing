@@ -30,9 +30,9 @@ export default defineComponent({
         largeSquare: 'px-2.5 py-0.5 rounded-md text-sm font-medium leading-5'
       } as { [key: string]: string })[this.size]
       const themeClasses = ({
-        white: 'bg-white text-gray-700',
-        lightGray: 'bg-gray-50 text-gray-700',
-        gray: 'bg-gray-100 text-gray-700',
+        white: 'bg-white text-gray-900',
+        lightGray: 'bg-gray-50 text-gray-900',
+        gray: 'bg-gray-100 text-gray-900',
         red: 'bg-red-100 text-red-800',
         orange: 'bg-orange-100 text-orange-800',
         yellow: 'bg-yellow-100 text-yellow-800',

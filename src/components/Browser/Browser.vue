@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden rounded-md shadow-lg">
+  <div class="overflow-hidden rounded-md shadow-md">
     <Toolbar class="w-full h-auto" />
     <div class="w-full h-0 bg-white" :style="{ paddingTop: `${aspect * 100}%` }">
       <slot />
@@ -14,7 +14,7 @@ export default defineComponent({
   components: { Toolbar },
   props: {
     aspect: {
-      type: [Number, String],
+      type: Number,
       default: 0.5238095238
     }
   }

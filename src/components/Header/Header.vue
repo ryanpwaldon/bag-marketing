@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between w-full max-w-4xl p-5">
     <Logo class="w-auto h-6" />
-    <Badge text="for Shopify" theme="white" size="largeSquare" />
+    <Badge text="Made for Shopify" theme="white" size="largeSquare" />
   </div>
 </template>
 
