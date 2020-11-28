@@ -10,7 +10,7 @@
       <Browser class="w-full mt-16" />
     </div>
     <div class="flex flex-col items-center px-5">
-      <Bolt class="text-blue-700" />
+      <Bolt />
       <h3 class="mt-4 text-2xl font-semibold">A new way to grow sales</h3>
       <p class="mt-4 text-base text-gray-500">
         Sell more with smart cross sells. They’re highly targeted offers that change depending on the items in each customers' cart.
@@ -19,7 +19,7 @@
       <Quote class="inline-flex mt-8 text-left">You're buying a tape dispenser...<br />Need some tape?</Quote>
     </div>
     <div class="flex flex-col items-center px-5">
-      <Sparkles class="text-blue-700" />
+      <Sparkles />
       <h3 class="mt-4 -mx-2 text-2xl font-semibold">Your customers will thank you</h3>
       <p class="mt-4 text-base text-gray-500">
         Give your customers a smooth checkout experience. Our variant editor makes it easy to review items and make changes.
@@ -27,7 +27,7 @@
       <Figure2 class="w-full mt-8" />
     </div>
     <div class="flex flex-col items-center px-5">
-      <Chart class="text-blue-700" />
+      <Chart />
       <h3 class="mt-4 text-2xl font-semibold">Cart manager</h3>
       <p class="mt-4 text-base text-gray-500">
         Create cross sells and track their performance in our easy-to-use Shopify embedded app.
