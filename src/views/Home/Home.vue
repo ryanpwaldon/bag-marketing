@@ -9,7 +9,7 @@
       <Button text="Get early access" class="mt-5" />
       <Browser class="w-full mt-16" />
     </div>
-    <div class="flex flex-col items-center px-5 m-auto sm:flex-row-reverse">
+    <div class="flex flex-col items-center px-5 sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
         <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
           <Bolt />
@@ -24,7 +24,7 @@
         <Figure1 class="sm:w-3/4 sm:transform sm:-rotate-2" />
       </div>
     </div>
-    <div class="flex flex-col items-center px-5 m-auto sm:flex-row">
+    <div class="flex flex-col items-center px-5 sm:flex-row">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
         <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
           <Sparkles />
@@ -40,11 +40,11 @@
     </div>
     <div class="flex flex-col items-center px-5">
       <Chart />
-      <h3 class="mt-4 text-2xl font-semibold sm:text-3xl">Cart manager</h3>
-      <p class="mt-4 text-base text-gray-500">
+      <h3 class="mt-4 text-2xl font-semibold sm:text-4xl">Cart manager</h3>
+      <p class="max-w-sm mt-4 text-base text-gray-500">
         Create cross sells and track their performance in our easy-to-use Shopify embedded app.
       </p>
-      <img class="w-full mt-8 rounded-md shadow-md" src="@/assets/img/admin.png" alt="Cart manager" />
+      <div class="w-full h-0 mt-8 bg-white rounded-md shadow-md" style="padding-top: 60%" />
     </div>
     <div class="flex flex-col items-center">
       <Bag />
