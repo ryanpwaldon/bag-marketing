@@ -20,6 +20,14 @@ const createFields = <T extends object>(schema: ObjectSchema<T>) => {
     const value = ref(clone(initial.value))
     const modified = computed(() => !isEqual(value.value, initial.value))
     const error = ref(undefined)
+    const validateOnType = async () => {
+      try {
+        await schema.validate(value.value)
+        error.value = undefined
+      } catch (err) {
+        // error.value = err.message
+      }
+    }
     const validate = async () => {
       try {
         await schema.validate(value.value)
@@ -28,7 +36,7 @@ const createFields = <T extends object>(schema: ObjectSchema<T>) => {
         error.value = err.message
       }
     }
-    watch(value, validate)
+    watch(value, validateOnType)
     fields[key] = { initial, value, modified, validate, error }
     return fields
   }, {} as Record<keyof T, Field>)
