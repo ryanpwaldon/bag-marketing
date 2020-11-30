@@ -13,7 +13,7 @@
           : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
       "
     />
-    <div class="mt-2 text-sm">
+    <div class="mt-2 text-sm" v-if="error || description">
       <p class="text-red-600" v-if="error">{{ error }}</p>
       <p class="text-gray-500" v-if="description && !error">{{ description }}</p>
     </div>

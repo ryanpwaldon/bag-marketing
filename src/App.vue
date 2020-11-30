@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <router-view />
+    <transition mode="out-in" enter-from-class="opacity-0" enter-to-class="opacity-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
+      <router-view class="transition" />
+    </transition>
   </Layout>
 </template>
 
