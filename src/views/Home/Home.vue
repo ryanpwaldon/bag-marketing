@@ -24,12 +24,13 @@
             Sell more by creating in-cart cross sells. With Bag, you can create highly targeted cross-sells that change depending on the items in each
             customers’ cart.
           </p>
-          <Quote class="inline-flex mt-8 text-left sm:text-sm md:text-base">You're buying a tape dispenser...<br />Need some tape?</Quote>
+          <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">You're buying a tape dispenser...<br />Need some tape?</Quote>
         </div>
       </div>
       <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
         <Figure1 class="sm:w-3/4 sm:transform sm:-rotate-2" />
       </div>
+      <Quote class="mt-8 text-left sm:hidden">You're buying a tape dispenser...<br />Need some tape?</Quote>
     </div>
     <div class="flex flex-col items-center sm:flex-row">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
