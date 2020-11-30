@@ -15,6 +15,9 @@ module.exports = {
       borderRadius: {
         '3xl': '2.75rem',
         '4xl': '3.25rem'
+      },
+      screens: {
+        xs: '360px'
       }
     }
   }

@@ -20,12 +20,14 @@ export default defineComponent({
     const box = ref()
     onMounted(() => {
       const tl = anime.timeline({ loop: true, duration: 2000 })
-      tl.add({ targets: line1.value, opacity: 1, scaleY: [0, 1] }, 200)
-      tl.add({ targets: line2.value, opacity: 1, scaleY: [0, 1] }, 400)
-      tl.add({ targets: line3.value, opacity: 1, scaleY: [0, 1] }, 600)
+      tl.add({ targets: line1.value, scaleY: [0, 1] }, 200)
+      tl.add({ targets: line2.value, scaleY: [0, 1] }, 400)
+      tl.add({ targets: line3.value, scaleY: [0, 1] }, 600)
       tl.add({ targets: box.value, scaleY: 1.1 }, 700)
       tl.add({ targets: box.value, scaleY: 1 }, 1100)
-      tl.add({ targets: [line1.value, line2.value, line3.value], opacity: 0, easing: 'easeInOutQuad', duration: 500 })
+      tl.add({ targets: line1.value, scaleY: [1, 0], easing: 'easeInOutQuad', duration: 300 }, 2200)
+      tl.add({ targets: line2.value, scaleY: [1, 0], easing: 'easeInOutQuad', duration: 300 }, 2400)
+      tl.add({ targets: line3.value, scaleY: [1, 0], easing: 'easeInOutQuad', duration: 300 }, 2600)
     })
     return { line1, line2, line3, box }
   }

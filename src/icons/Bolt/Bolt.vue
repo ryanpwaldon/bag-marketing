@@ -38,9 +38,9 @@ export default defineComponent({
     const line = ref()
     const clip = ref()
     onMounted(() => {
-      const tl = anime.timeline({ loop: true, easing: 'linear' })
-      tl.add({ targets: line.value, strokeDashoffset: [anime.setDashoffset, 0], duration: 500 }, 0)
-      tl.add({ targets: clip.value, strokeDashoffset: [anime.setDashoffset, 0], duration: 1000, delay: 100 }, 0)
+      const tl = anime.timeline({ loop: true, easing: 'linear', direction: 'reverse' })
+      tl.add({ targets: line.value, strokeDashoffset: [anime.setDashoffset, 0], duration: 750 }, 0)
+      tl.add({ targets: clip.value, strokeDashoffset: [anime.setDashoffset, 0], duration: 1500, delay: 100 }, 0)
     })
     return { line, clip }
   }

@@ -22,10 +22,10 @@ export default defineComponent({
     const spark2 = ref()
     const spark3 = ref()
     onMounted(() => {
-      const tl = anime.timeline({ loop: true, duration: 2000, direction: 'alternate' })
-      tl.add({ targets: spark1.value, scale: [0, 1], rotate: [-180, 0] }, 0)
-      tl.add({ targets: spark2.value, scale: [0, 1], rotate: [-180, 0] }, 200)
-      tl.add({ targets: spark3.value, scale: [0, 1], rotate: [-45, 0], easing: 'easeOutElastic(1, 1)' }, 400)
+      const tl = anime.timeline({ loop: true, duration: 2000, direction: 'alternate', endDelay: -800 })
+      tl.add({ targets: spark1.value, scale: [0, 1], rotate: [-180, 0] }, 200)
+      tl.add({ targets: spark2.value, scale: [0, 1], rotate: [-180, 0] }, 400)
+      tl.add({ targets: spark3.value, scale: [0, 1], rotate: [-45, 0], easing: 'easeOutElastic(1, 1)' }, 600)
     })
     return { spark1, spark2, spark3 }
   }

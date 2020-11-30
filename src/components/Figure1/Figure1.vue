@@ -125,7 +125,7 @@ export default defineComponent({
     onMounted(() => {
       const tl = anime.timeline({ loop: true, easing: 'easeInOutQuad', duration: 150 })
       tl.add({ targets: offers.value, opacity: [0, 1] }, 1000)
-      tl.add({ targets: offers.value, translateY: [4, 0], easing: 'easeOutQuad', duration: 500 }, 1000)
+      tl.add({ targets: offers.value, translateY: [-4, 0], easing: 'easeOutQuad', duration: 150 }, 1000)
       tl.add({ targets: offers.value, opacity: 0 }, 3000)
     })
     return { offers }
