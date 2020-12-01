@@ -23,7 +23,7 @@
           <Bolt />
           <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Unlock more sales</h3>
           <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
-            Sell more by creating in-cart cross sells. With Bag, you can create highly targeted cross-sells that change depending on the items in each
+            Sell more with in-cart cross sells. With Bag, you can create highly targeted cross-sells that change depending on the items in each
             customers’ cart.
           </p>
           <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">You're buying a tape dispenser...<br />Need some tape?</Quote>
