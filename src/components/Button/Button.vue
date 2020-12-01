@@ -1,10 +1,16 @@
 <template>
-  <button :type="type" :class="classes" class="flex items-center justify-center transition focus:outline-none">
-    {{ text }}
+  <button
+    :type="type"
+    :class="[classes, loading && 'pointer-events-none']"
+    class="relative flex items-center justify-center transition focus:outline-none"
+  >
+    <Spinner v-if="loading" class="absolute w-4 h-4 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />
+    <span :class="loading && 'invisible'">{{ text }}</span>
   </button>
 </template>
 
 <script lang="ts">
+import Spinner from '@/components/Spinner/Spinner.vue'
 import { defineComponent, PropType } from 'vue'
 
 type Themes = 'white' | 'black' | 'dark'
@@ -12,6 +18,7 @@ type Sizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 type Classes<T extends string> = { [K in T]: string }
 
 export default defineComponent({
+  components: { Spinner },
   props: {
     text: {
       type: String,

@@ -18,6 +18,9 @@ module.exports = {
       },
       screens: {
         xs: '360px'
+      },
+      zIndex: {
+        '-10': '-10'
       }
     }
   }
