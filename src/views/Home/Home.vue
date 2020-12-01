@@ -1,7 +1,7 @@
 <template>
-  <div class="grid max-w-5xl gap-24 px-5 pb-24 m-auto text-center sm:gap-32 sm:pb-52">
+  <div class="flex flex-col max-w-5xl px-5 pb-24 m-auto space-y-24 text-center sm:space-y-32 sm:pb-52">
     <Header />
-    <div class="flex flex-col items-center">
+    <div class="relative flex flex-col items-center">
       <h1 class="text-3xl font-semibold leading-tight sm:leading-tight sm:text-5xl">
         Bag, a shopping cart
         <br class="hidden xs:block" />
@@ -10,10 +10,12 @@
       <p class="max-w-md mt-4 text-gray-500 sm:text-xl sm:max-w-lg">
         Impress your customers with a smooth checkout experience and sell more at the same time.
       </p>
-      <router-link to="/join">
-        <Button text="Get early access" class="mt-5" />
+      <router-link to="/join" class="mt-5">
+        <Button text="Get early access" />
       </router-link>
-      <Browser class="w-full mt-16" />
+      <Browser class="w-full mt-16">
+        <video autoplay muted loop src="@/assets/video/demo.mp4" />
+      </Browser>
     </div>
     <div class="flex flex-col items-center sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
@@ -57,8 +59,8 @@
     <div class="flex flex-col items-center">
       <h3 class="mt-4 text-3xl font-semibold sm:text-4xl">Try Bag</h3>
       <p class="mt-4 text-base text-gray-500">Streamline your checkout, grow your sales.</p>
-      <router-link to="/join">
-        <Button class="mt-5" text="Get early access" />
+      <router-link to="/join" class="mt-5">
+        <Button text="Get early access" />
       </router-link>
     </div>
   </div>

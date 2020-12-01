@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden rounded-md shadow-md">
     <Toolbar class="w-full h-auto" />
-    <div class="w-full h-0 bg-white" :style="{ paddingTop: `${aspect * 100}%` }">
+    <div class="bg-white">
       <slot />
     </div>
   </div>
@@ -11,12 +11,6 @@
 import Toolbar from '@/icons/Toolbar/Toolbar.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
-  components: { Toolbar },
-  props: {
-    aspect: {
-      type: Number,
-      default: 0.5238095238
-    }
-  }
+  components: { Toolbar }
 })
 </script>
