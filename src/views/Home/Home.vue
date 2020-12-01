@@ -13,7 +13,7 @@
       <router-link to="/join" class="mt-5">
         <Button text="Get early access" />
       </router-link>
-      <Browser class="w-full mt-16" :aspect="760 / 1200">
+      <Browser class="w-full mt-16" :aspect="760 / 1200" url="supply.co">
         <video autoplay muted loop src="@/assets/video/demo.mp4" />
       </Browser>
     </div>
@@ -54,7 +54,9 @@
       <p class="max-w-md mt-4 text-base text-gray-500">
         Create cross sells and track their performance in our easy-to-use Shopify embedded app.
       </p>
-      <div class="w-full h-0 mt-8 bg-white rounded-lg shadow-md" style="padding-top: 60%" />
+      <Browser class="w-full mt-8" :aspect="640 / 1200" url="myshopify.com">
+        <img src="@/assets/img/admin.png" />
+      </Browser>
     </div>
     <div class="flex flex-col items-center">
       <h3 class="mt-4 text-3xl font-semibold sm:text-4xl">Try Bag</h3>

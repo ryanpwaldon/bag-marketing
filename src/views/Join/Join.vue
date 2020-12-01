@@ -23,7 +23,7 @@
           <InputText name="Shop URL" placeholder="Your shop website" v-model="fields.shopUrl.value.value" :error="fields.shopUrl.error.value" />
           <Button type="submit" size="md" text="Get early access" :loading="loading" />
           <p class="text-sm text-center text-red-600" v-if="error">
-            An error occurred. Please email your details to ryanpwaldon@gmail.com, and I'll manually put you on the list 👍
+            An error occurred. My apologies! Please email your details to ryanpwaldon@gmail.com, and I'll manually put you on the list 🙏
           </p>
         </form>
       </div>
