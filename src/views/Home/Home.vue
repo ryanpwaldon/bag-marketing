@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col max-w-5xl px-5 pb-24 m-auto space-y-24 text-center sm:space-y-32 sm:pb-52">
+  <div class="grid max-w-5xl gap-24 px-5 pb-24 m-auto text-center sm:gap-32 sm:pb-52">
     <Header />
     <div class="relative flex flex-col items-center">
       <h1 class="text-3xl font-semibold leading-tight sm:leading-tight sm:text-5xl">
@@ -13,7 +13,7 @@
       <router-link to="/join" class="mt-5">
         <Button text="Get early access" />
       </router-link>
-      <Browser class="w-full mt-16">
+      <Browser class="w-full mt-16" :aspect="760 / 1200">
         <video autoplay muted loop src="@/assets/video/demo.mp4" />
       </Browser>
     </div>
