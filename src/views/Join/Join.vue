@@ -6,7 +6,7 @@
     <div class="w-full max-w-full bg-white rounded shadow sm:w-96">
       <div class="grid gap-1 p-6 text-center sm:py-6 sm:px-8">
         <h3 class="text-lg font-medium">Join early access</h3>
-        <p class="text-sm text-gray-500">Ready to streamline your checkout<br />and grow your sales?</p>
+        <p class="text-sm text-gray-500">Streamline your checkout and grow your sales.</p>
       </div>
       <div class="w-full h-px bg-gray-200" />
       <form class="grid gap-6 p-6 sm:p-8" @submit="handleSubmit">
