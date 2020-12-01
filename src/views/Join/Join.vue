@@ -9,7 +9,7 @@
         class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full p-6 text-center transition duration-300 delay-300"
       >
         <Star class="w-6 h-6 star" />
-        <p class="mt-2 text-2xl font-medium">Success</p>
+        <p class="mt-2 text-2xl font-medium">You're on the list</p>
         <p class="mt-2 text-base text-gray-500">Thanks for the interest!<br />We’ll be sending invites shortly,<br />so keep your eyes peeled.</p>
       </div>
       <div :class="success ? 'opacity-0' : 'opacity-100'" class="transition duration-300">
