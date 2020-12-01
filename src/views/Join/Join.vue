@@ -22,6 +22,9 @@
           <InputText name="Email" placeholder="Your email" v-model="fields.email.value.value" :error="fields.email.error.value" />
           <InputText name="Shop URL" placeholder="Your shop website" v-model="fields.shopUrl.value.value" :error="fields.shopUrl.error.value" />
           <Button type="submit" size="md" text="Get early access" :loading="loading" />
+          <p class="text-sm text-center text-red-600" v-if="error">
+            An error occurred. Please email your details to ryanpwaldon@gmail.com, and I'll manually put you on the list 👍
+          </p>
         </form>
       </div>
     </div>
@@ -37,6 +40,7 @@ import InputText from '@/components/InputText/InputText.vue'
 import useForm from '@/composables/useForm'
 import { defineComponent, ref } from 'vue'
 import { object, string } from 'yup'
+import leadService from '@/services/api/services/leadService'
 export default defineComponent({
   components: {
     Logo,
@@ -45,6 +49,7 @@ export default defineComponent({
     Star
   },
   setup() {
+    const error = ref(false)
     const loading = ref(false)
     const success = ref(false)
     const schema = object({
@@ -59,12 +64,18 @@ export default defineComponent({
     const { fields, handleSubmit, getValues } = useForm(schema)
     const onSubmit = async () => {
       loading.value = true
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      console.log(getValues())
-      loading.value = false
-      success.value = true
+      try {
+        const lead = await leadService.create(getValues())
+        console.log(lead)
+        success.value = true
+      } catch (err) {
+        console.log(err)
+        loading.value = false
+        error.value = true
+      }
     }
     return {
+      error,
       fields,
       loading,
       success,
