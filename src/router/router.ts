@@ -12,6 +12,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/join',
     name: 'Join',
     component: Join
+  },
+  {
+    path: '/:path(.*)*',
+    redirect: '/'
   }
 ]
 
