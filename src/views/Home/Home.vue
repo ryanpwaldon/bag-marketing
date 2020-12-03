@@ -14,7 +14,7 @@
         <Button text="Get early access" />
       </router-link>
       <Browser class="w-full mt-16" :aspect="760 / 1200" url="supply.co">
-        <video autoplay muted loop src="@/assets/video/demo.mp4" />
+        <video autoplay muted loop playsinline src="@/assets/video/demo.mp4" />
       </Browser>
     </div>
     <div class="flex flex-col items-center sm:flex-row-reverse">
