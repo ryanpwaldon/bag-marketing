@@ -9,8 +9,10 @@
         class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full p-6 text-center transition duration-300 delay-300"
       >
         <Star class="w-6 h-6 star" />
-        <p class="mt-2 text-2xl font-medium">You're on the list</p>
-        <p class="mt-2 text-base text-gray-500">Thanks for the interest!<br />We’ll be sending invites shortly,<br />so keep your eyes peeled.</p>
+        <p class="mt-2 text-2xl font-medium">One last step</p>
+        <p class="max-w-xs mt-2 text-base text-gray-500">
+          Excited to have you on board! Please complete the form sent to your inbox to get your invite as early as possible.
+        </p>
       </div>
       <div :class="success ? 'opacity-0' : 'opacity-100'" class="transition duration-300">
         <div class="grid gap-1 p-6 text-center sm:py-6 sm:px-8">
@@ -19,8 +21,7 @@
         </div>
         <div class="w-full h-px bg-gray-200" />
         <form class="grid gap-6 p-6 sm:p-8" @submit="handleSubmit">
-          <InputText name="Email" placeholder="Your email" v-model="fields.email.value.value" :error="fields.email.error.value" />
-          <InputText name="Shop URL" placeholder="Your shop website" v-model="fields.shopUrl.value.value" :error="fields.shopUrl.error.value" />
+          <InputText name="Email" placeholder="Enter your email..." v-model="fields.email.value.value" :error="fields.email.error.value" />
           <Button type="submit" size="md" text="Get early access" :loading="loading" />
           <p class="text-sm text-center text-red-600" v-if="error">
             An error occurred. My apologies! Please email your details to ryanpwaldon@gmail.com, and I'll manually put you on the list 🙏
@@ -56,9 +57,6 @@ export default defineComponent({
       email: string()
         .required('Please enter an email.')
         .email('Please enter a valid email.')
-        .default(''),
-      shopUrl: string()
-        .required('Please enter your shop URL.')
         .default('')
     }).defined()
     const { fields, handleSubmit, getValues } = useForm(schema)

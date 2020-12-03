@@ -2,7 +2,6 @@ import client from '@/services/api/client'
 
 type Lead = {
   email: string
-  shopUrl: string
 }
 
 export default {
