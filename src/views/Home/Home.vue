@@ -8,7 +8,9 @@
         that <span class="text-blue-700">grows your sales</span>
       </h1>
       <p class="max-w-md mt-4 text-gray-500 sm:text-xl sm:max-w-lg">
-        Impress your customers with a smooth checkout experience and sell more at the same time.
+        Impress your customers with a smooth checkout
+        <br class="hidden sm:block" />
+        and sell more products at the same time.
       </p>
       <router-link to="/join" class="mt-5">
         <Button text="Get early access" />
