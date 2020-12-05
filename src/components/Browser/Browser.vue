@@ -20,7 +20,7 @@ export default defineComponent({
     },
     url: {
       type: String,
-      required: true
+      required: false
     }
   }
 })
