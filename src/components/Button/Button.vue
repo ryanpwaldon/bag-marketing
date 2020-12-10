@@ -5,7 +5,10 @@
     class="relative flex items-center justify-center transition focus:outline-none"
   >
     <Spinner v-if="loading" class="absolute w-4 h-4 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />
-    <span :class="loading && 'invisible'">{{ text }}</span>
+    <div :class="loading && 'invisible'" class="flex items-center space-x-2">
+      <span>{{ text }}</span>
+      <slot name="icon" />
+    </div>
   </button>
 </template>
 

@@ -16,8 +16,14 @@
         <Button text="Get early access" />
       </router-link>
       <Browser class="w-full mt-16" :aspect="760 / 1200">
-        <video autoplay muted loop playsinline src="@/assets/video/demo.mp4" />
+        <video ref="videoLoop" autoplay muted loop playsinline src="@/assets/video/demo.mp4" />
+        <video ref="videoHidden" class="absolute top-0 left-0 invisible w-full" muted loop src="@/assets/video/demo.mp4" />
       </Browser>
+      <Button class="mt-6 sm:hidden" text="View fullscreen" size="md" theme="white" @click="fullscreen">
+        <template #icon>
+          <Expand />
+        </template>
+      </Button>
     </div>
     <div class="flex flex-col items-center sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
@@ -71,7 +77,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 import Header from '@/components/Header/Header.vue'
 import Browser from '@/components/Browser/Browser.vue'
 import Bolt from '@/icons/Bolt/Bolt.vue'
@@ -81,6 +87,7 @@ import Sparkles from '@/icons/Sparkles/Sparkles.vue'
 import Figure2 from '@/components/Figure2/Figure2.vue'
 import Button from '@/components/Button/Button.vue'
 import Chart from '@/icons/Chart/Chart.vue'
+import Expand from '@/icons/Expand/Expand.vue'
 export default defineComponent({
   components: {
     Header,
@@ -91,7 +98,18 @@ export default defineComponent({
     Sparkles,
     Figure2,
     Button,
-    Chart
+    Chart,
+    Expand
+  },
+  setup() {
+    const videoLoop = ref()
+    const videoHidden = ref()
+    const fullscreen = () => {
+      if (videoLoop.value.requestFullScreen) return videoLoop.value.requestFullScreen()
+      else if (videoLoop.value.webkitRequestFullScreen) return videoLoop.value.webkitRequestFullScreen()
+      else videoHidden.value.play()
+    }
+    return { videoLoop, videoHidden, fullscreen }
   }
 })
 </script>
