@@ -24,4 +24,8 @@ const router = createRouter({
   routes
 })
 
+router.afterEach(() => {
+  setTimeout(window.analytics.page, 5)
+})
+
 export default router
