@@ -11,3 +11,8 @@ body,
   position: relative;
   @apply bg-gray-100;
 }
+
+img {
+  @apply pointer-events-none;
+  @apply select-none;
+}

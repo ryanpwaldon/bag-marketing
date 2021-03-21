@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home/Home.vue'
-import Join from '../views/Join/Join.vue'
+import Demo from '../views/Demo/Demo.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,9 +9,9 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
-    path: '/join',
-    name: 'Join',
-    component: Join
+    path: '/demo',
+    name: 'Demo',
+    component: Demo
   },
   {
     path: '/:path(.*)*',

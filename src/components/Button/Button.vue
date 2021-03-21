@@ -55,9 +55,9 @@ export default defineComponent({
         xl: 'rounded-md px-6 py-3 text-base font-medium leading-6'
       }
       const themeClasses: Classes<Themes> = {
-        white: 'border text-gray-700 hover:text-gray-900 bg-white border-gray-200 hover:bg-gray-50 focus:bg-gray-100',
-        black: 'border text-white bg-gray-900 border-gray-700 hover:bg-gray-800 focus:bg-gray-700',
-        dark: 'border text-white bg-gray-800 border-gray-700 hover:bg-gray-900 focus:bg-black'
+        white: 'text-gray-900 hover:text-gray-900 bg-white hover:bg-gray-50 focus:bg-gray-100 shadow',
+        black: 'border text-white bg-gray-900 border-gray-700 hover:bg-gray-800 focus:bg-gray-700 shadow',
+        dark: 'border text-white bg-gray-800 border-gray-700 hover:bg-gray-900 focus:bg-black shadow'
       }
       return `${sizeClasses[this.size]} ${themeClasses[this.theme]}`
     }

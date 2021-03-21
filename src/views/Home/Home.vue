@@ -12,9 +12,18 @@
         <br class="hidden sm:block" />
         and sell more products at the same time.
       </p>
-      <router-link to="/join" class="mt-5">
-        <Button text="Get early access" />
-      </router-link>
+      <div class="flex flex-col w-full mt-5 space-y-3 sm:space-y-0 sm:space-x-4 sm:flex-row sm:w-auto">
+        <router-link to="/demo">
+          <Button text="Interactive demo" theme="white" class="w-full sm:w-auto">
+            <template #icon>
+              <Cursor />
+            </template>
+          </Button>
+        </router-link>
+        <a href="http://apps.shopify.com/bag" target="_blank">
+          <Button text="Get early access →" class="w-full sm:w-auto" />
+        </a>
+      </div>
       <Browser class="w-full mt-16" :aspect="760 / 1200">
         <video ref="videoLoop" autoplay muted loop playsinline src="@/assets/video/demo.mp4" />
         <video ref="videoHidden" class="absolute top-0 left-0 invisible w-full" muted loop src="@/assets/video/demo.mp4" />
@@ -28,50 +37,74 @@
     <div class="flex flex-col items-center sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
         <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
-          <Bolt />
-          <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Unlock more sales</h3>
+          <Trend />
+          <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Drive customer spending</h3>
           <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
-            Sell more with in-cart cross sells. With Bag, you can create highly targeted cross-sells that change depending on the items in each
-            customers’ cart.
+            Increase your AOV with customisable progress bars. Customers are open to spending more if you present them with the right incentives.
+          </p>
+          <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">Want a free pencil case?<br />You’re only $28 away</Quote>
+        </div>
+      </div>
+      <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
+        <Figure0 class="sm:w-3/4 sm:transform sm:-rotate-2" />
+      </div>
+      <Quote class="mt-8 text-left sm:hidden">Want a free pencil case?<br />You’re only $28 away</Quote>
+    </div>
+    <div class="flex flex-col items-center sm:flex-row">
+      <div class="w-full sm:flex-1 sm:flex sm:justify-center">
+        <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
+          <Bolt />
+          <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Smarter cross sells</h3>
+          <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
+            Sell more with smart cross sells – they’re dynamic offers that only appear when certain products are added to a customer’s cart.
           </p>
           <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">You're buying a tape dispenser...<br />Need some tape?</Quote>
         </div>
       </div>
       <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
-        <Figure1 class="sm:w-3/4 sm:transform sm:-rotate-2" />
+        <Figure1 class="sm:w-3/4 sm:transform sm:rotate-2" />
       </div>
       <Quote class="mt-8 text-left sm:hidden">You're buying a tape dispenser...<br />Need some tape?</Quote>
     </div>
-    <div class="flex flex-col items-center sm:flex-row">
+    <div class="flex flex-col items-center sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
         <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
           <Sparkles />
           <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Customers will thank you</h3>
           <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
-            Our variant editor makes it easy to review items and make changes — giving your customers a smooth checkout experience.
+            Our variant editor makes it easy to review items and make changes — we give your customers a smooth checkout experience.
           </p>
         </div>
       </div>
       <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
-        <Figure2 class="sm:w-3/4 sm:transform sm:rotate-2" />
+        <Figure2 class="sm:w-3/4 sm:transform sm:-rotate-2" />
       </div>
     </div>
     <div class="flex flex-col items-center">
       <Chart />
-      <h3 class="mt-4 text-2xl font-semibold sm:text-4xl">Cart manager</h3>
+      <h3 class="mt-4 text-2xl font-semibold sm:text-4xl">Track conversions</h3>
       <p class="max-w-md mt-4 text-base text-gray-500">
-        Create cross sells and track their performance in our easy-to-use Shopify embedded app.
+        Create offers and track conversions in our simple-to-use Shopify embedded app.
       </p>
       <Browser class="w-full mt-8" :aspect="640 / 1200">
         <img src="@/assets/img/admin.png" />
       </Browser>
     </div>
     <div class="flex flex-col items-center">
-      <h3 class="mt-4 text-3xl font-semibold sm:text-4xl">Try Bag</h3>
-      <p class="mt-4 text-base text-gray-500">Streamline your checkout, grow your sales.</p>
-      <router-link to="/join" class="mt-5">
-        <Button text="Get early access" />
-      </router-link>
+      <h3 class="mt-4 text-3xl font-semibold sm:text-4xl">Try it out</h3>
+      <p class="mt-4 text-base text-gray-500">Grow your sales, streamline your checkout.</p>
+      <div class="flex flex-col w-full mt-5 space-y-3 sm:space-y-0 sm:space-x-4 sm:flex-row sm:w-auto">
+        <router-link to="/demo">
+          <Button text="Interactive demo" theme="white" class="w-full sm:w-auto">
+            <template #icon>
+              <Cursor />
+            </template>
+          </Button>
+        </router-link>
+        <a href="http://apps.shopify.com/bag" target="_blank">
+          <Button text="Get early access →" class="w-full sm:w-auto" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -88,6 +121,9 @@ import Figure2 from '@/components/Figure2/Figure2.vue'
 import Button from '@/components/Button/Button.vue'
 import Chart from '@/icons/Chart/Chart.vue'
 import Expand from '@/icons/Expand/Expand.vue'
+import Figure0 from '@/components/Figure0/Figure0.vue'
+import Trend from '@/icons/Trend/Trend.vue'
+import Cursor from '@/icons/Cursor/Cursor.vue'
 export default defineComponent({
   components: {
     Header,
@@ -99,7 +135,10 @@ export default defineComponent({
     Figure2,
     Button,
     Chart,
-    Expand
+    Expand,
+    Figure0,
+    Trend,
+    Cursor
   },
   setup() {
     const videoLoop = ref()

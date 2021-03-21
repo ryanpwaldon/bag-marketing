@@ -1,18 +1,18 @@
 <template>
-  <div class="flex justify-between w-full max-w-4xl py-8 m-auto">
+  <div class="flex items-center justify-between w-full max-w-4xl py-8 m-auto">
     <Logo class="w-auto h-6" />
-    <Badge text="Coming soon to Shopify" theme="white" size="largeSquare" />
+    <a href="http://apps.shopify.com/bag" target="_blank" class="text-sm font-medium text-gray-900 border-b border-transparent hover:border-gray-900">
+      View on Shopify →
+    </a>
   </div>
 </template>
 
 <script lang="ts">
-import Badge from '@/components/Badge/Badge.vue'
 import Logo from '@/icons/Logo/Logo.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
   components: {
-    Logo,
-    Badge
+    Logo
   }
 })
 </script>
