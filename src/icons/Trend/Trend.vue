@@ -1,10 +1,10 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="transform -rotate-12" stroke="currentColor">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="transform -rotate-12">
     <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
       <path stroke="#C2CCEF" d="M21 7l-8 8-4-4-6 6M21 7h-5m5 0v5" />
-      <path ref="line3" class="text-blue-700" d="M21,7L16,7" />
-      <path ref="line2" class="text-blue-700" d="M21 7v5" />
-      <path ref="line1" class="text-blue-700" d="M3,17L9,11L13,15L21,7" />
+      <path ref="line3" class="text-blue-700" stroke="currentColor" d="M21,7L16,7" />
+      <path ref="line2" class="text-blue-700" stroke="currentColor" d="M21 7v5" />
+      <path ref="line1" class="text-blue-700" stroke="currentColor" d="M3,17L9,11L13,15L21,7" />
     </g>
   </svg>
 </template>
