@@ -7,8 +7,8 @@
         <br class="hidden xs:block" />
         that <span class="text-blue-700">grows your sales</span>
       </h1>
-      <p class="max-w-md mt-4 text-gray-500 sm:text-xl sm:max-w-lg">
-        Impress your customers with a smooth checkout
+      <p class="max-w-md mt-4 text-gray-500 sm:text-xl sm:max-w-xl">
+        Impress your customers with a smooth checkout experience
         <br class="hidden sm:block" />
         and sell more products at the same time.
       </p>
@@ -40,7 +40,7 @@
           <Trend />
           <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Drive customer spending</h3>
           <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
-            Increase your AOV with customisable progress bars. Customers are open to spending more if you present them with the right incentives.
+            Increase your AOV with customizable progress bars. Customers are open to spending more if you present them with the right incentives.
           </p>
           <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">Want a free pencil case?<br />You’re only $28 away</Quote>
         </div>

@@ -65,7 +65,7 @@ export default defineComponent({
   props: {
     url: {
       type: String,
-      required: true
+      required: false
     }
   }
 })
