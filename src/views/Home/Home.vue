@@ -8,9 +8,9 @@
         that <span class="text-blue-700">grows your sales</span>
       </h1>
       <p class="max-w-md mt-4 text-gray-500 sm:text-xl sm:max-w-xl">
-        Impress your customers with a smooth checkout experience
+        Improve your checkout experience and
         <br class="hidden sm:block" />
-        and sell more products at the same time.
+        maximize your sales with powerful in-cart offers.
       </p>
       <div class="flex flex-col w-full mt-5 space-y-3 sm:space-y-0 sm:space-x-4 sm:flex-row sm:w-auto">
         <router-link to="/demo">
@@ -21,7 +21,7 @@
           </Button>
         </router-link>
         <a href="http://apps.shopify.com/bag" target="_blank">
-          <Button text="Get early access →" class="w-full sm:w-auto" />
+          <Button text="Install app →" class="w-full sm:w-auto" />
         </a>
       </div>
       <Browser class="w-full mt-16" :aspect="760 / 1200">
@@ -37,22 +37,6 @@
     <div class="flex flex-col items-center sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
         <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
-          <Trend />
-          <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Drive customer spending</h3>
-          <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
-            Increase your AOV with customizable progress bars. Customers are open to spending more if you present them with the right incentives.
-          </p>
-          <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">Want a free pencil case?<br />You’re only $28 away</Quote>
-        </div>
-      </div>
-      <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
-        <Figure0 class="sm:w-3/4 sm:transform sm:-rotate-2" />
-      </div>
-      <Quote class="mt-8 text-left sm:hidden">Want a free pencil case?<br />You’re only $28 away</Quote>
-    </div>
-    <div class="flex flex-col items-center sm:flex-row">
-      <div class="w-full sm:flex-1 sm:flex sm:justify-center">
-        <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
           <Bolt />
           <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Smarter cross sells</h3>
           <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
@@ -62,9 +46,25 @@
         </div>
       </div>
       <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
-        <Figure1 class="sm:w-3/4 sm:transform sm:rotate-2" />
+        <Figure1 class="sm:w-3/4 sm:transform sm:-rotate-2" />
       </div>
       <Quote class="mt-8 text-left sm:hidden">You're buying a tape dispenser...<br />Need some tape?</Quote>
+    </div>
+    <div class="flex flex-col items-center sm:flex-row">
+      <div class="w-full sm:flex-1 sm:flex sm:justify-center">
+        <div class="flex flex-col items-center sm:text-left sm:items-start sm:w-10/12">
+          <Trend />
+          <h3 class="mt-4 text-2xl font-semibold sm:text-xl md:text-2xl lg:text-3xl">Drive customer spending</h3>
+          <p class="max-w-md mt-4 text-gray-500 sm:text-sm md:text-base">
+            Increase your AOV with customizable progress bars. Customers are open to spending more if you present them with the right incentives.
+          </p>
+          <Quote class="hidden mt-8 sm:text-sm md:text-base sm:inline-flex">Want a free pencil case?<br />You’re only $28 away</Quote>
+        </div>
+      </div>
+      <div class="w-full max-w-md mt-8 sm:max-w-none sm:mt-0 sm:flex-1 sm:flex sm:justify-center">
+        <Figure0 class="sm:w-3/4 sm:transform sm:rotate-2" />
+      </div>
+      <Quote class="mt-8 text-left sm:hidden">Want a free pencil case?<br />You’re only $28 away</Quote>
     </div>
     <div class="flex flex-col items-center sm:flex-row-reverse">
       <div class="w-full sm:flex-1 sm:flex sm:justify-center">
@@ -102,7 +102,7 @@
           </Button>
         </router-link>
         <a href="http://apps.shopify.com/bag" target="_blank">
-          <Button text="Get early access →" class="w-full sm:w-auto" />
+          <Button text="Install app →" class="w-full sm:w-auto" />
         </a>
       </div>
     </div>
