@@ -1,6 +1,7 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home/Home.vue'
 import Demo from '../views/Demo/Demo.vue'
+import CatchAll from '../views/CatchAll/CatchAll.vue'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,8 +15,8 @@ const routes: Array<RouteRecordRaw> = [
     component: Demo
   },
   {
-    path: '/:path(.*)*',
-    redirect: '/'
+    path: '/:affiliateCode/:path(.*)*',
+    component: CatchAll
   }
 ]
 
