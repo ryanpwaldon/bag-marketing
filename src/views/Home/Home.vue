@@ -20,7 +20,7 @@
             </template>
           </Button>
         </router-link>
-        <a href="http://apps.shopify.com/bag" target="_blank">
+        <a href="https://web.archive.org/web/20211019140256/https://apps.shopify.com/bag" target="_blank">
           <Button text="Install app →" class="w-full sm:w-auto" />
         </a>
       </div>
@@ -101,7 +101,7 @@
             </template>
           </Button>
         </router-link>
-        <a href="http://apps.shopify.com/bag" target="_blank">
+        <a href="https://web.archive.org/web/20211019140256/https://apps.shopify.com/bag" target="_blank">
           <Button text="Install app →" class="w-full sm:w-auto" />
         </a>
       </div>
